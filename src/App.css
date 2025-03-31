@@ -1,11 +1,11 @@
 /* App.css */
 
-/* Force light color scheme */
+/* Force a light color scheme */
 :root {
   color-scheme: light;
 }
 
-/* 1) Full-Height Setup */
+/* Global reset & full-height settings */
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -69,7 +69,7 @@ input:focus, select:focus, textarea:focus {
   color: #333;
 }
 
-/* Center form fields */
+/* Centering form fields within the splash */
 .form-fields {
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ input:focus, select:focus, textarea:focus {
   text-align: center;
 }
 
-/* Splash button */
+/* Splash button styling */
 .splash-content button {
   display: block;
   width: 100%;
@@ -95,6 +95,7 @@ input:focus, select:focus, textarea:focus {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .splash-content button:hover {
@@ -124,7 +125,7 @@ input:focus, select:focus, textarea:focus {
   color: #333;
 }
 
-/* Side form for new routes */
+/* Side form for planning new routes */
 .side-form {
   background-color: #fafafa;
   border: 1px solid #ccc;
@@ -145,6 +146,7 @@ input:focus, select:focus, textarea:focus {
   width: 100%;
 }
 
+/* Side form button */
 .side-form button {
   width: 100%;
   margin-top: 1rem;
@@ -165,8 +167,8 @@ input:focus, select:focus, textarea:focus {
 .checkbox-label {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   color: #333;
 }
@@ -175,7 +177,7 @@ input:focus, select:focus, textarea:focus {
   margin-right: 0.5rem;
 }
 
-/* ---------- Vending Machines (Stops) ---------- */
+/* ---------- Stops Container (Vending Machines) ---------- */
 .stops-container {
   background-color: #fafafa;
   border: 1px solid #ccc;
@@ -244,12 +246,13 @@ input:focus, select:focus, textarea:focus {
   color: #333;
 }
 
-/* ---------- Route Steps ---------- */
+/* ---------- Route Steps Container ---------- */
 .route-steps-container {
   background-color: #fafafa;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .route-steps-container h3 {
@@ -280,13 +283,31 @@ input:focus, select:focus, textarea:focus {
   color: #666;
 }
 
+/* ---------- Apple Shortcut Button ---------- */
+.apple-shortcut-button {
+  background-color: #007AFF; /* Apple blue */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apple-shortcut-button:hover {
+  background-color: #005bb5;
+}
+
 /* ---------- Map Container ---------- */
 .map-container {
   flex: 1;
   height: 100%;
 }
 
-/* ---------- Responsive Tweaks ---------- */
+/* ---------- Responsive Adjustments ---------- */
 @media (max-width: 700px) {
   .main-container {
     flex-direction: column;
