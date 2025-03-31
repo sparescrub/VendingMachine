@@ -1,0 +1,303 @@
+/* App.css */
+
+/* Force light color scheme */
+:root {
+  color-scheme: light;
+}
+
+/* 1) Full-Height Setup */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Universal Input Styling ---------- */
+input, select, textarea {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+}
+
+/* ---------- Splash Screen ---------- */
+.splash {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  z-index: 999;
+}
+
+.splash-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.splash-content h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Center form fields */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-fields label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Splash button */
+.splash-content button {
+  display: block;
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff !important;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.splash-content button:hover {
+  background-color: #0056b3;
+}
+
+/* ---------- Main Layout ---------- */
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar-content {
+  width: 320px;
+  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.sidebar-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Side form for new routes */
+.side-form {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.side-form label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.side-form input {
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+.side-form button {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: #fff !important;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.side-form button:hover {
+  background-color: #218838;
+}
+
+/* Checkbox styling */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkbox-label input {
+  margin-right: 0.5rem;
+}
+
+/* ---------- Vending Machines (Stops) ---------- */
+.stops-container {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stops-container h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.stop-list {
+  margin-top: 0.5rem;
+}
+
+.stop-item {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stop-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stop-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.stop-extra {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.stop-item button {
+  background-color: #ffc107;
+  color: #333 !important;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.stop-item button:hover {
+  background-color: #e0a800;
+}
+
+.no-stops {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.extra-time {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ---------- Route Steps ---------- */
+.route-steps-container {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.route-steps-container h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.route-list {
+  margin-top: 0.5rem;
+}
+
+.route-step {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.route-step p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.no-route-details {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ---------- Map Container ---------- */
+.map-container {
+  flex: 1;
+  height: 100%;
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .sidebar-content {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .map-container {
+    height: 60vh;
+  }
+}

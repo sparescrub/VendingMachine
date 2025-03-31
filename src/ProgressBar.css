@@ -1,0 +1,17 @@
+/* ProgressBar.css */
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px;
+    margin: 1rem 0;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #007BFF;
+    width: 0%;
+    transition: width 0.2s linear;
+  }
+  
